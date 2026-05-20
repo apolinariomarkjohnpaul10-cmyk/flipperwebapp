@@ -1,6 +1,6 @@
 fastapi==0.115.5
 uvicorn[standard]==0.32.1
-python3-nmap==1.9.1
+python-nmap
 scapy==2.6.1
 dpkt==1.9.8
 anyio==4.6.2
