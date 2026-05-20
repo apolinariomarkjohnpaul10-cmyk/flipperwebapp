@@ -24,7 +24,7 @@ import ipaddress
 
 logger = logging.getLogger(__name__)
 control_router = APIRouter(prefix="/api/control", tags=["control"])
-ALLOWED_ORIGIN = "http://localhost:3000"
+ALLOWED_ORIGIN = "https://flipperwebapp.vercel.app"
 conf.verb = 0
 
 # ---------------------------------------------------------------------------

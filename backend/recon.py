@@ -47,7 +47,7 @@ logger = logging.getLogger(__name__)
 
 recon_router = APIRouter(prefix="/api/recon", tags=["recon"])
 
-ALLOWED_ORIGIN = "http://localhost:3000"
+ALLOWED_ORIGIN = "https://flipperwebapp.vercel.app"
 
 conf.verb = 0
 

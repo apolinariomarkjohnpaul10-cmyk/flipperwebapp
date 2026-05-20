@@ -34,7 +34,7 @@ logger = logging.getLogger(__name__)
 # Constants
 # ---------------------------------------------------------------------------
 
-ALLOWED_ORIGIN = "http://localhost:3000"
+ALLOWED_ORIGIN = "https://flipperwebapp.vercel.app"
 
 ALLOWED_SCAN_TYPES = {"syn", "ping", "ports"}
 
