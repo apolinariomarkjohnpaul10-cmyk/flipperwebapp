@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 
-const API = "http://localhost:8000";
+const API = "https://flipperwebapp.onrender.com";
 
 function Section({ title, children }) {
   return (
@@ -208,7 +208,7 @@ function DhcpSniffer() {
   const wsRef = useRef(null);
 
   const start = () => {
-    const ws = new WebSocket("ws://localhost:8000/api/recon/ws/dhcp-sniff");
+    const ws = new WebSocket("wss://flipperwebapp.onrender.com/api/recon/ws/dhcp-sniff");
     wsRef.current = ws;
 
     ws.onopen = () => {
@@ -307,7 +307,7 @@ function ControlPanel() {
   };
 
   const startFeature = (feature) => {
-    let url = `ws://localhost:8000/api/control/ws/${feature}`;
+    let url = `wss://flipperwebapp.onrender.com/api/control/ws/${feature}`;
     const ws = new WebSocket(url);
     wsRef.current = ws;
     let payload = { target_ip: targetIp, gateway_ip: gatewayIp };
